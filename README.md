@@ -1,6 +1,9 @@
+
 # Secondary Language
 
 A simple Blender addon for quickly switching languages.
+
+<img alt="secondary-language_poster" src="https://github.com/user-attachments/assets/d33176e0-c3b9-4d2b-8c50-d1a05b9b8371" />
 
 ## Features
 
@@ -8,6 +11,7 @@ A simple Blender addon for quickly switching languages.
 - 💾 Remembers translation settings
 - ⌨️ Keymap support
 - 🧩 Simple features, Compact UI
+
 
 ## Usage
 
