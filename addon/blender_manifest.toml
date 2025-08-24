@@ -7,7 +7,7 @@ tagline = "Quickly switch to secondary language"
 maintainer = "mdlt7z"
 type = "add-on"
 
-website = ""
+website = "https://github.com/mdlt7z/secondary-language"
 tags = ["User Interface"]
 
 blender_version_min = "4.2.0"
