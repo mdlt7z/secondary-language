@@ -12,11 +12,11 @@ A simple Blender addon for quickly switching languages.
 
 <br>
 
-<img alt="secondary-language_github" src="https://github.com/user-attachments/assets/0f6cae89-a9c0-4ac5-9011-6c7746b4f7be" />
+<img src="https://github.com/user-attachments/assets/06be648b-86ae-4d2e-881e-bbdeec5d4c28" />
 
 ## Install
 
-- Blender Extension (coming soon)
+- Blender Extensions (coming soon)
 - [Release](https://github.com/mdlt7z/secondary-language/releases/latest)
 
 ## Usage
