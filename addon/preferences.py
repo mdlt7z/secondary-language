@@ -89,7 +89,7 @@ class SecondaryLanguagePreferences(AddonPreferences):
         col.prop(self, "trans_reports")
         col.prop(self, "trans_new_dataname")
 
-        layout.operator("secondary_language.open_keymap_prefs")
+        layout.operator("wm.secondary_language_keymap_open")
 
 
 def register():

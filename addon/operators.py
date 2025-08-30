@@ -15,7 +15,7 @@ class SECONDARY_LANGUAGE_OT_KeymapToggle(Operator):
 
 
 class SECONDARY_LANGUAGE_OT_OpenAddonPreferences(Operator):
-    bl_idname = "secondary_language.open_addon_prefs"
+    bl_idname = "wm.secondary_language_prefs_open"
     bl_label = "Preferences"
     bl_description = "Open Addon Preferences"
 
@@ -26,7 +26,7 @@ class SECONDARY_LANGUAGE_OT_OpenAddonPreferences(Operator):
 
 
 class SECONDARY_LANGUAGE_OT_OpenKeymapPreferences(Operator):
-    bl_idname = "secondary_language.open_keymap_prefs"
+    bl_idname = "wm.secondary_language_keymap_open"
     bl_label = "Keymap Preferences"
     bl_description = "Open Keymap Preferences"
 
@@ -38,7 +38,7 @@ class SECONDARY_LANGUAGE_OT_OpenKeymapPreferences(Operator):
             if area.type == "PREFERENCES":
                 space = area.spaces.active
                 space.filter_type = "NAME"
-                space.filter_text = "secondary_language.toggle"
+                space.filter_text = "wm.secondary_language_toggle"
 
         return {"FINISHED"}
 

@@ -13,7 +13,7 @@ class SECONDARY_LANGUAGE_PT_Panel(Panel):
 
         row = layout.row(align=True)
         row.label(text="Secondary Language")
-        row.operator("secondary_language.open_addon_prefs", icon="PREFERENCES", text="")
+        row.operator("wm.secondary_language_prefs_open", icon="PREFERENCES", text="")
 
         row = layout.row(align=True)
         row.prop(
