@@ -9,7 +9,7 @@ def register_keymaps():
     if kc:
         km = kc.keymaps.new(name="Window", space_type="EMPTY")
         kmi = km.keymap_items.new(
-            "secondary_language.toggle", type="PERIOD", value="PRESS", shift=True
+            "wm.secondary_language_toggle", type="PERIOD", value="PRESS", shift=True
         )
         addon_keymaps.append((km, kmi))
 

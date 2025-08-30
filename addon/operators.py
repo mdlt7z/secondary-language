@@ -2,18 +2,14 @@ import bpy
 from bpy.types import Operator
 
 
-class SECONDARY_LANGUAGE_OT_Toggle(Operator):
-    bl_idname = "secondary_language.toggle"
-    bl_label = "Secondary Language"
-    bl_description = "Enable secondary language"
+class SECONDARY_LANGUAGE_OT_KeymapToggle(Operator):
+    bl_idname = "wm.secondary_language_toggle"
+    bl_label = "Toggle Secondary Language"
+    bl_description = "Toggle between default and secondary languages"
 
     def execute(self, context):
         prefs = context.preferences.addons[__package__].preferences
-
-        if prefs.active_language == "default":
-            prefs.active_language = "secondary"
-        else:
-            prefs.active_language = "default"
+        prefs.use_secondary_language = not prefs.use_secondary_language
 
         return {"FINISHED"}
 
@@ -48,7 +44,7 @@ class SECONDARY_LANGUAGE_OT_OpenKeymapPreferences(Operator):
 
 
 classes = [
-    SECONDARY_LANGUAGE_OT_Toggle,
+    SECONDARY_LANGUAGE_OT_KeymapToggle,
     SECONDARY_LANGUAGE_OT_OpenAddonPreferences,
     SECONDARY_LANGUAGE_OT_OpenKeymapPreferences,
 ]

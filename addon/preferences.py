@@ -3,13 +3,26 @@ from bl_i18n_utils.settings import LANGUAGES
 from bpy.props import BoolProperty, EnumProperty
 from bpy.types import AddonPreferences
 
-from .utils import update_active_language, update_default_language, update_secondary_language
+from .utils import (
+    get_use_secondary,
+    set_use_secondary,
+    update_active_language,
+    update_default_language,
+    update_secondary_language,
+)
 
 languages = [(lang[2], lang[1], "") for lang in LANGUAGES]
 
 
 class SecondaryLanguagePreferences(AddonPreferences):
     bl_idname = __package__
+
+    use_secondary_language: BoolProperty(
+        name="Secondary Language",
+        description="Use secondary language",
+        get=get_use_secondary,
+        set=set_use_secondary,
+    )
 
     active_language: EnumProperty(
         items=[("default", "Default", ""), ("secondary", "Secondary", "")],
@@ -18,6 +31,7 @@ class SecondaryLanguagePreferences(AddonPreferences):
         default="default",
         update=update_active_language,
     )
+
     default_language: EnumProperty(
         items=languages,
         name="Default",

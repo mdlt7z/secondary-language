@@ -16,11 +16,12 @@ class SECONDARY_LANGUAGE_PT_Panel(Panel):
         row.operator("secondary_language.open_addon_prefs", icon="PREFERENCES", text="")
 
         row = layout.row(align=True)
-        row.operator(
-            "secondary_language.toggle",
-            icon="WORLD",
+        row.prop(
+            prefs,
+            "use_secondary_language",
             text="",
-            depress=(prefs.active_language == "secondary"),
+            icon="WORLD",
+            toggle=True,
         )
         row.prop(prefs, "secondary_language", text="")
 
@@ -33,11 +34,12 @@ def draw_secondary_language(self, context):
     prefs = context.preferences.addons[__package__].preferences
 
     row = layout.row(align=True)
-    row.operator(
-        "secondary_language.toggle",
-        icon="WORLD",
+    row.prop(
+        prefs,
+        "use_secondary_language",
         text="",
-        depress=(prefs.active_language == "secondary"),
+        icon="WORLD",
+        toggle=True,
     )
     row.popover(panel="SECONDARY_LANGUAGE_PT_Panel", text="")
 

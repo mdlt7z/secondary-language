@@ -12,6 +12,14 @@ def set_language(lang_code):
     view.use_translate_new_dataname = prefs.trans_new_dataname
 
 
+def get_use_secondary(self):
+    return self.active_language == "secondary"
+
+
+def set_use_secondary(self, value):
+    self.active_language = "secondary" if value else "default"
+
+
 def update_active_language(self, context):
     if self.active_language == "default":
         set_language(self.default_language)
