@@ -22,14 +22,14 @@ class SecondaryLanguagePreferences(AddonPreferences):
         items=languages,
         name="Default",
         description="Select the default language",
-        default="ja_JP",
+        default="en_US",
         update=update_default_language,
     )
     secondary_language: EnumProperty(
         items=languages,
         name="Secondary",
         description="Select the secondary language",
-        default="en_US",
+        default="ja_JP",
         update=update_secondary_language,
     )
 
