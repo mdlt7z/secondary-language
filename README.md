@@ -1,4 +1,3 @@
-
 # Secondary Language
 
 A simple Blender addon for quickly switching languages.
@@ -22,7 +21,7 @@ A simple Blender addon for quickly switching languages.
 ## Usage
 
 1. Install the addon
-2. Set the default and secondary language. Default is `ja_JP` & `en_US`
+2. Set the default and secondary language. Default is `en_US` & `ja_JP`
 3. Choose the translation target (this setting takes priority)
 4. Set the keymap. Default is `shift .`
 5. All done! Enjoy your Blender life :)
