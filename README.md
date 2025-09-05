@@ -15,7 +15,7 @@ A simple Blender addon for quickly switching languages.
 
 ## Install
 
-- Blender Extensions (coming soon)
+- [Blender Extensions](https://extensions.blender.org/add-ons/secondary-language)
 - [Release](https://github.com/mdlt7z/secondary-language/releases/latest)
 
 ## Usage
