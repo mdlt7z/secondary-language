@@ -1,5 +1,4 @@
 import bpy
-from bl_i18n_utils.settings import LANGUAGES
 from bpy.props import BoolProperty, EnumProperty
 from bpy.types import AddonPreferences
 
@@ -11,7 +10,8 @@ from .utils import (
     update_secondary_language,
 )
 
-languages = [(lang[2], lang[1], "") for lang in LANGUAGES]
+items = bpy.types.PreferencesView.bl_rna.properties["language"].enum_items
+languages = [(item.identifier, item.name, "") for item in items]
 
 
 class SecondaryLanguagePreferences(AddonPreferences):
